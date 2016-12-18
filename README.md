@@ -1,4 +1,4 @@
-# test
+# react-composed-component-demo
 一个组合式组件的demo
 
 * npm install
