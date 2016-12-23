@@ -10,7 +10,8 @@ import { SearchDecorate } from '../decorator/Search.decorate';
 export default class Search extends React.PureComponent< IProps, { }> {
 
     render( ) {
-        // 通过往Selector注入外部props，让decorator能够访问到外部传入的数据
+        // Selector是智能的数据注入层，往SearchInput、List的props注入外部数据
+        // decorator能够访问到外部传入的数据，把内部/外部数据注入给Selector
         return (
             <Seletor {...this.props}>
                 <SearchInput />
